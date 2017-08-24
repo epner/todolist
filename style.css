@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media screen and (min-width:1024px) {
 	body {
 		font-size: 100%;
@@ -112,3 +113,103 @@ li.done {
 .item {
   border-bottom: 1px solid gray;
 } */
+=======
+@media screen and (min-width:1024px) {
+	body {
+		font-size: 100%;
+	}
+}
+
+body {
+  text-align: center;
+}
+div {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 34px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 50px;
+}
+.body_center {
+  text-align: center;
+  width: 650px;
+  margin: 100px auto;
+}
+
+form {
+  display: inline-block;
+}
+
+input[type=text] {
+  display: inline-block;
+  width: 400px;
+  padding: 12px 10px;
+  margin: 8px 0px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: FontAwesome, "Architects Daughter";
+  font-size: 16px;
+}
+
+#button{
+  display: inline-block;
+  height: 47px;
+  width: 80px;
+	background-color: #ff3333;
+	font-family: "Architects Daughter";
+  font-size: 18px;
+	color: #ffffff;
+	border-radius: 5px;
+	text-align: center;
+	margin: 2px;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #ff0c0c;
+}
+.items-list {
+  text-align: left;
+}
+.list {
+	font-family: "Architects Daughter";
+	color:#ff3333;
+  overflow: auto;
+	list-style: none;
+	position: relative;
+}
+li::before {
+    font-family: 'FontAwesome';
+    content: '\f096';
+    margin: 0 5px 0 -15px;
+}
+
+li {
+	position: relative;
+  border-bottom: 1px solid gray;
+}
+
+li.done::before {
+		font-family: 'FontAwesome';
+    content: '\f046';
+    margin: 0 5px 0 -15px;
+		text-decoration: none;
+}
+
+li.done {
+	text-decoration: line-through;
+}
+
+
+/* .item::before {
+    font-family: 'FontAwesome';
+    content: '\f096';
+    margin: 0 5px 0 -15px;
+}
+
+.item {
+  border-bottom: 1px solid gray;
+} */
+>>>>>>> f276f690e79ceb0b679f3d27dc2926a79e8c61ef
