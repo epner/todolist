@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- Website's meta data -->
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <meta name="keywords" content="to-do list" />
+      <meta name="description" content="To-Do List for everyday action!" />
+      <meta name="author" content="Kristo Epner - To Do OÜ" />
+
+      <!-- Website title-->
+      <title>Today's To-Do List</title>
+
+      <!-- Styling and javascript links -->
+      <link href="style.css" rel="stylesheet" type="text/css"/>
+	    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+      <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script type="text/javascript" src="jquery.js"></script>
+  </head>
+
+  <!-- ToDo List starts-->
+  <body>
+    <div class="body_center">
+    <img src="todo-list.jpg" alt="To Do List for Today">
+		  <form id="toDoForm" name="checkListForm" autocomplete="off">
+          <input type="text" name="checkListItem" placeholder="&#xf040; What's Your next action?" title="Left-click with your mouse on To-Do! button to register Your list"/>
+		  </form>
+		<div id="button">To Do!</div>
+		<br/>
+      <div class="items-list">
+        <ul class="list"></ul>
+      </div>
+    </div>
+	</body>
+  <!-- ToDo List ends -->
+
+</html>
