@@ -86,22 +86,45 @@ li.done {
 	text-decoration: line-through;
 }
 
-/* Tooltip */
+/* ToolTip CSS classses */
 .tooltip {
-    background-color:#000;
-    border:1px solid #fff;
-    padding:10px 15px;
-    width:200px;
-    display:none;
-    color:#fff;
-    text-align:left;
-    font-size:12px;
-
-    /* outline radius for mozilla/firefox only */
-    -moz-box-shadow:0 0 10px #000;
-    -webkit-box-shadow:0 0 10px #000;
+display: inline-block;
 }
+.tooltip .tooltiptext {
+    margin-left: -200px;
+    visibility: hidden;
+    background-color: #FFF;
+    border-radius:4px;
+    border: 1px solid #dddddd;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    margin-top : 0px; /* according to application */
+   	opacity: 0;
+    transition: opacity 1s;
+		color: #a8a8a8;
+		font-size: 12px;
+		line-height: normal;
+}
+/* .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+		bottom: -webkit-calc(100% - 1px); /*may require prefix for old browser support /
+		bottom: calc(100% - 1px); /*i.e. half the height /
+    left: 50%; /* To the left of the tooltip  /
+		height: 5px;
+		width: 5px;
+		transform: rotate(45deg);
+    border-width: inherit;
+    border-style: solid;
+    border-color: #dddddd transparent transparent #dddddd;
 
+} */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 
 /* .item::before {
     font-family: 'FontAwesome';
